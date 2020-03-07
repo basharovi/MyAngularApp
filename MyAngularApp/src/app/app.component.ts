@@ -11,4 +11,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'My First Angular App';
   just = 'Nothing!'
+  buttonClick(){
+    alert("You have clicked Button!");
+  }
+  isValid:boolean = false;
+  radioClick(v: boolean){
+    this.isValid = v;
+  }
+
+  templateForm(value: any) {
+    alert(JSON.stringify(value));
+  }
 }
